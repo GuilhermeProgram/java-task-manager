@@ -14,5 +14,21 @@ public class TaskManager {
     public List<Task> getAll() {
         return tasks;
     }
+    private Task findById(int id) {
+        for (Task t : tasks) {
+            if (t.getId() == id) {
+                return t;
+            }
+        }
+        return null;
+    }
+    public boolean complete(int id) {
+        Task t = findById(id);
+        if (t == null) {
+            return false;
+        }
+        t.markAsDone();
+        return true;
+    }
 }
 
