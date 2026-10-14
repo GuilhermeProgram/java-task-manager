@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         TaskManager manager = new TaskManager();
+        manager.load();
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
@@ -27,6 +28,7 @@ public class Main {
                     System.out.println("O título não pode ser vazio.");
                 } else {
                     Task created = manager.add(title);
+                    manager.save();
                     System.out.println("Criada: " + created);
                 }
 
@@ -42,6 +44,7 @@ public class Main {
             } else if (option.equals("3")) {
                 int id = readId(scanner);
                 if (manager.complete(id)) {
+                    manager.save();
                     System.out.println("Tarefa concluída!");
                 } else {
                     System.out.println("Tarefa não encontrada.");
@@ -50,6 +53,7 @@ public class Main {
             } else if (option.equals("4")) {
                 int id = readId(scanner);
                 if (manager.remove(id)) {
+                    manager.save();
                     System.out.println("Tarefa removida.");
                 } else {
                     System.out.println("Tarefa não encontrada.");
