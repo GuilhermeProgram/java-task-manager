@@ -30,5 +30,13 @@ public class TaskManager {
         t.markAsDone();
         return true;
     }
+    public boolean remove(int id) {
+        Task t = findById(id);
+        if (t == null) {
+            return false;
+        }
+        tasks.remove(t);
+        return true;
+    }
 }
 
