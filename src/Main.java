@@ -84,7 +84,7 @@ public class Main {
     }
 
     private static int readId(Scanner scanner) {
-        System.out.print("ID da tarefa: ");
+        System.out.print("Digite o numero de id da tarefa: ");
         try {
             return Integer.parseInt(scanner.nextLine().trim());
         } catch (NumberFormatException e) {
