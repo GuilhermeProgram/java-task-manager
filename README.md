@@ -8,7 +8,7 @@ Gerenciador de tarefas de terminal em Java puro, sem frameworks. Projeto de estu
 
 Além do menu de terminal, há uma janela em Swing:
 
-[Interface gráfica](docs/Viewer.png)
+[Interface gráfica](Docs/Viewer.png)
 
 
 
