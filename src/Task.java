@@ -9,6 +9,12 @@ public class Task {
         this.done = false;
     }
 
+    public Task(int id, String title, boolean done) {
+        this.id = id;
+        this.title = title;
+        this.done = done;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -26,7 +32,6 @@ public class Task {
     }
 
     @Override
-
     public String toString() {
         String mark;
         if (done) {
