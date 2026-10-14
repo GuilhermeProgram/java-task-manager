@@ -2,6 +2,10 @@
 
 Gerenciador de tarefas de terminal em Java puro, sem frameworks. Projeto de estudo para praticar orientação a objetos, coleções e arquivos, versionado com Git em commits pequenos.
 
+![Menu do Task Manager](docs/menu.png)
+
+![Listagem de tarefas com status](docs/listagem.png)
+
 ## Funcionalidades
 - Adicionar, listar, concluir e remover tarefas
 - Listar só as tarefas pendentes
