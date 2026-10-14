@@ -14,6 +14,7 @@ public class Main {
             System.out.println("2 - Listar tarefas");
             System.out.println("3 - Concluir tarefa");
             System.out.println("4 - Remover tarefa");
+            System.out.println("5 - Listar pendentes");
             System.out.println("0 - Sair");
             System.out.print("Escolha: ");
 
@@ -52,6 +53,18 @@ public class Main {
                     System.out.println("Tarefa removida.");
                 } else {
                     System.out.println("Tarefa não encontrada.");
+                }
+
+            } else if (option.equals("5")) {
+                boolean found = false;
+                for (Task t : manager.getAll()) {
+                    if (!t.isDone()) {
+                        System.out.println(t);
+                        found = true;
+                    }
+                }
+                if (!found) {
+                    System.out.println("Nenhuma tarefa pendente.");
                 }
 
             } else if (option.equals("0")) {
