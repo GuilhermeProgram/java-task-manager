@@ -6,7 +6,11 @@ Gerenciador de tarefas de terminal em Java puro, sem frameworks. Projeto de estu
 
 ![Listagem de tarefas com status](docs/listagem.png)
 
+Além do menu de terminal, há uma janela em Swing:
+
 [Interface gráfica](docs/Viewer.png)
+
+
 
 ## Funcionalidades
 - Adicionar, listar, concluir e remover tarefas
